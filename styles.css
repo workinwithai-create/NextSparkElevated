@@ -1,0 +1,20 @@
+body { font-family: system-ui, sans-serif; background: #111; color: #eee; margin: 0; padding: 1rem; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; z-index: 100; cursor: pointer; }
+.overlay.hidden { display: none; }
+header { text-align: center; margin-bottom: 1rem; }
+#status { background: #222; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1rem; }
+input, button { background: #333; color: #eee; border: 1px solid #555; padding: 0.4rem; border-radius: 4px; }
+button { cursor: pointer; }
+.recipes { display: flex; flex-wrap: wrap; gap: 0.5rem; width: 100%; }
+.card { background: #222; border: 1px solid #444; padding: 0.5rem; border-radius: 4px; cursor: pointer; text-align: left; }
+.card.on { border-color: #0a0; background: #1a2a1a; }
+.mutes { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.bars { display: flex; gap: 0.5rem; margin: 1rem 0; }
+.bar { flex: 1; background: #222; padding: 0.5rem; text-align: center; border-radius: 4px; }
+.bar.active { background: #0a3; color: #000; }
+.grid { display: flex; gap: 2px; margin-bottom: 1rem; }
+.step { width: 20px; height: 20px; background: #333; border-radius: 2px; }
+.step.on { background: #0a0; }
+#punch { background: #1a1a1a; padding: 1rem; white-space: pre-wrap; font-size: 0.85rem; }
+.note { font-size: 0.8rem; color: #888; }

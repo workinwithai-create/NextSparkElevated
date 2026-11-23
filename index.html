@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextSpark Elevated</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="tap-overlay" class="overlay">Tap to start audio</div>
+  <header>
+    <h1>NextSpark Elevated</h1>
+    <p>Four-bar live spark desk · WorkinWithAI Audio Engine compliant</p>
+  </header>
+  <div id="status">Loading samples...</div>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="98"></label>
+    <label>Key <input type="text" id="key" value="A minor"></label>
+    <label>Chords <input type="text" id="chords" value="Am F C G" placeholder="Am F C G"></label>
+    <div id="recipes" class="recipes"></div>
+    <div class="mutes">
+      <label><input type="checkbox" id="mute-kick" checked> Kick</label>
+      <label><input type="checkbox" id="mute-snare" checked> Snare</label>
+      <label><input type="checkbox" id="mute-hat" checked> Hat</label>
+      <label><input type="checkbox" id="mute-bass" checked> Bass</label>
+      <label><input type="checkbox" id="mute-piano" checked> Piano</label>
+      <label><input type="checkbox" id="mute-guitar" checked> Guitar</label>
+    </div>
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="export-wav">Export Folded WAV</button>
+    <button id="export-tail">Export With Tail</button>
+    <button id="export-midi">Export MIDI</button>
+  </div>
+  <div id="bars" class="bars"></div>
+  <div id="grid" class="grid"></div>
+  <pre id="punch"></pre>
+  <p class="note">iOS: silent switch mutes Web Audio. Hardware MIDI supported for playable instruments.</p>
+  <script src="app.js"></script>
+</body>
+</html>
